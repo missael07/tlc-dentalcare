@@ -6,7 +6,19 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NotpagefoundComponent } from './notpagefound/notpagefound.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { 
+    path: 'home', 
+    component: PagesComponent,
+    children: [
+      {
+        path: 'about-us', component:HomeComponent
+      },
+      {
+        path: 'contact-us', component:ContactComponent
+      }
+    ]
+},
+  { path: '', component:NotpagefoundComponent },
   // { path: '**', component: NotpagefoundComponent },
 ];
 
