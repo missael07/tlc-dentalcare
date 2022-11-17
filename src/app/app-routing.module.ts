@@ -4,6 +4,10 @@ import { PagesComponent } from './pages/pages.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NotpagefoundComponent } from './notpagefound/notpagefound.component';
+import { ClinicServicesComponent } from './pages/clinic-services/clinic-services.component';
+import { ClinicComponent } from './pages/clinic/clinic.component';
+import { DoctorComponent } from './pages/doctor/doctor.component';
+import { LocationComponent } from './pages/location/location.component';
 
 const routes: Routes = [
   { 
@@ -11,15 +15,24 @@ const routes: Routes = [
     component: PagesComponent,
     children: [
       {
-        path: 'about-us', component:HomeComponent
+        path: 'services', component: ClinicServicesComponent
       },
       {
-        path: 'contact-us', component:ContactComponent
+        path: 'clinic', component:ClinicComponent
+      },
+      {
+        path: 'doctors', component:DoctorComponent
+      },
+      {
+        path: 'location', component:LocationComponent
+      },
+      {
+        path: 'contact', component:ContactComponent
       }
     ]
 },
-  { path: '', component:NotpagefoundComponent },
-  // { path: '**', component: NotpagefoundComponent },
+  { path: '', redirectTo: '/home/services',pathMatch:'full' },
+  { path: '**', component: NotpagefoundComponent },
 ];
 
 @NgModule({

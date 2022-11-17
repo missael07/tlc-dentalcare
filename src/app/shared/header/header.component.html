@@ -1,25 +1,11 @@
-<nav class="navbar navbar-expand-lg nav mb-5">
-    <div class="container-fluid">
-      <a class="navbar-brand menu " [routerLink]="['/home/about-us']" routerLinkActive="router-link-active" >
-        <img src="../../../assets/tlc-logo.png"> 
-      </a>
-      <div class=" navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item menu">
-            <a class="nav-link menu" aria-current="page" [routerLink]="['/home/about-us']" routerLinkActive="router-link-active" ><strong>Home</strong></a>
-          </li>
-          <li class="nav-item menu">
-            <a class="nav-link menu" [routerLink]="['/home/contact-us']" routerLinkActive="router-link-active"><strong>Contact Us</strong></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="contact-number">
-      <div >
-        <a href="tel:980-328-1866">US #:(980)328-1866</a>
-      </div>
-      <div>
-        <a href="tel:01152 658-517-3404">MX #:01152 658-517-3404</a>
-      </div>
-    </div>
-</nav>
+
+
+<div class="nav mb-10">
+	<nav class="menu-list">
+		<a [routerLink]="['/home/services']" routerLinkActive="router-link-active">Services</a>
+		<a [routerLink]="['/home/clinic']" routerLinkActive="router-link-active">Clinic</a>
+		<a [routerLink]="['/home/doctors']" routerLinkActive="router-link-active">Doctor</a>
+		<a [routerLink]="['/home/location']" routerLinkActive="router-link-active">Location</a>
+		<a [routerLink]="['/home/contact']" routerLinkActive="router-link-active">Contact</a>
+	</nav>
+</div>

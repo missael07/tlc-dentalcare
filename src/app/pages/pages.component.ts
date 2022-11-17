@@ -11,10 +11,10 @@ export class PagesComponent implements OnInit, AfterViewInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.router.navigateByUrl('/home/about-us')
+    this.router.navigateByUrl('/home/clinic')
   }
   ngAfterViewInit(): void {
-    this.router.navigateByUrl('/home/about-us')
+    this.router.navigateByUrl('/home/clinic')
     
   }
 

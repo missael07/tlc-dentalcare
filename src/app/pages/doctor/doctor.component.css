@@ -1,0 +1,17 @@
+
+h1
+{
+	position: relative;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Ebisu Light', Arial, Helvetica, sans-serif;
+	font-size: 52px;
+	letter-spacing: 16px;
+	color: #54514F;
+	line-height: 40px;
+	padding-top: 74px;
+	margin-bottom: 45px;
+	margin-top: 0;
+	font-weight: normal;
+}
