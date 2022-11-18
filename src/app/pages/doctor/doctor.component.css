@@ -7,13 +7,20 @@
 	min-width: 900px;
 }
 .doctor-card{
-	height: 60%;
+	position: relative;
+	display: block;
+	margin: 0;
+	font-size: 30px;
+	text-align: center;
+	height: 300px;
+	margin-bottom: 16px;
+
 }
 .doctor-img{
-	width: 90%;
-	height: 50%;
-	margin: 10px 30px;
-	border-radius: 100%;
+    width: 50%;
+    height: 50%;
+    margin-top: 5px;
+    border-radius: 100%;
 }
 .doctor-name{
 	margin: 20px 5px;
@@ -26,4 +33,20 @@
 		width: 100%;
 		min-width: 90%;
 	}
+	.doctor-card{
+		position: relative;
+		display: block;
+		text-align: center;
+		font-style: italic;
+		padding: 0 5px;
+		margin: 0 0 15px;
+		font-size: large;
+		height: 300px;
+		margin-bottom: 16px;
+	}
+	.doctor-img{
+		width: 50%;
+		height: 45%;
+	}
+
 }

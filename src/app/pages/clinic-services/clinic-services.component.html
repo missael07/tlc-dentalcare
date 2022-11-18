@@ -1,9 +1,10 @@
 <div class="info-container">
     <h1 class="title animate__animated animate__backInDown">Services</h1>
-    <div class="row">
-        <div class="col-2 mb-5 card-clinic  " *ngFor="let item of clinicServices; let i = index " >
-            <div class="card mb-3 card-shadow animate__animated " [ngClass]="{odd:i % 2 != 0,animate__rotateInDownRight: i%2 == 0, animate__rotateInDownLeft:i % 2 != 0 }" style="height: 100%;" >
-                <div class="card-body">
+    <div class="row" *ngFor="let item of clinicServices; let i = index ">
+        <h3> {{ item.type }}</h3>
+        <div class="col-4 mb-5 card-clinic" *ngFor="let item of item.items; let i = index " >
+            <div class=" mb-3  animate__animated " [ngClass]="{animate__rotateInDownRight: i%2 == 0, animate__rotateInDownLeft:i % 2 != 0 }" style="height: 100%;" >
+                <div class="card card card-shadow">
                     <h5 class="card-title cel-title" ><strong> {{ item }} </strong></h5>
                 </div>
             </div>
