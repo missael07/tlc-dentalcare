@@ -1,0 +1,33 @@
+.info-container
+{
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	min-width: 900px;
+}
+.card-clinic{
+    margin-bottom: 1px !important;
+    width: 33% !important;
+    height: 50%;
+}
+
+.odd {
+    color: #a0d7c6;
+    background-color: #EEEEEE ;
+}
+
+@media (max-width: 767px) {
+    .info-container {
+		width: 100%;
+		min-width: 90%;
+	}
+    .card-clinic{
+        margin-bottom: 1px !important;
+        width: 130px !important;
+        height: 50%;
+    }
+    .cel-title{
+        font-size: 13px;
+    }
+}

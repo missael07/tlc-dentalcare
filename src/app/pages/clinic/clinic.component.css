@@ -73,14 +73,22 @@ img{
 	}
 	.carousel-heigt{
 		position: relative;
-	display: block;
-	width: 370px;
-	height: 330px;
-    margin: 0 auto;
+		display: block;
+		width: 370px;
+		height: 330px;
+		margin: 0 auto;
 	}
 	.inner{
 		position: relative;
-    width: 100%;
-    overflow: hidden;
+		width: 97%;
+		overflow: hidden;
+	}
+	.subtitle {
+		position: relative;
+		display: block;
+		text-align: center;
+		font-style: italic;
+		padding: 0 20px;
+		margin: 0 0 45px;
 	}
 }

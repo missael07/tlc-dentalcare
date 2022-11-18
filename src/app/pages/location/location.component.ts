@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -6,12 +6,18 @@ import { environment } from 'src/environments/environment';
   templateUrl: './location.component.html',
   styleUrls: ['./location.component.css']
 })
-export class LocationComponent implements OnInit {
+export class LocationComponent implements OnInit, OnDestroy{
 
   coords = environment.coords;
+  destroy = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  ngOnDestroy(): void {
+   console.log('destroy');
+   
+    this.destroy = true;
+  }
 }

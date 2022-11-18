@@ -1,17 +1,29 @@
-
-h1
+.info-container
 {
+	width: 900px;
+	margin: 0 auto;
 	position: relative;
 	display: block;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Ebisu Light', Arial, Helvetica, sans-serif;
-	font-size: 52px;
-	letter-spacing: 16px;
-	color: #54514F;
-	line-height: 40px;
-	padding-top: 74px;
-	margin-bottom: 45px;
-	margin-top: 0;
-	font-weight: normal;
+	min-width: 900px;
+}
+.doctor-card{
+	height: 60%;
+}
+.doctor-img{
+	width: 90%;
+	height: 50%;
+	margin: 10px 30px;
+	border-radius: 100%;
+}
+.doctor-name{
+	margin: 20px 5px;
+}
+.doctor-description{
+	margin: 5px 5px;
+}
+@media (max-width: 767px) {
+    .info-container {
+		width: 100%;
+		min-width: 90%;
+	}
 }

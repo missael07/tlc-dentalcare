@@ -1,7 +1,12 @@
-<div class="">
+<div class="info-container">
+    <h1 class="title animate__animated animate__backInDown">Services</h1>
     <div class="row">
-        <div class="col-md-6 xs-12">
-            <app-coming-soon></app-coming-soon>
+        <div class="col-2 mb-5 card-clinic  " *ngFor="let item of clinicServices; let i = index " >
+            <div class="card mb-3 card-shadow animate__animated " [ngClass]="{odd:i % 2 != 0,animate__rotateInDownRight: i%2 == 0, animate__rotateInDownLeft:i % 2 != 0 }" style="height: 100%;" >
+                <div class="card-body">
+                    <h5 class="card-title cel-title" ><strong> {{ item }} </strong></h5>
+                </div>
+            </div>
         </div>
     </div>
 </div>
