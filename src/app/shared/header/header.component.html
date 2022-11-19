@@ -1,9 +1,9 @@
 <div class="nav mb-10">	
 	<nav class="menu-list">
-		<a [routerLink]="['/tlc-dental/services']" routerLinkActive="router-link-active">Services</a>
-		<a [routerLink]="['/tlc-dental/clinic']" routerLinkActive="router-link-active">Clinic</a>
-		<a [routerLink]="['/tlc-dental/doctors']" routerLinkActive="router-link-active">Doctor</a>
-		<a [routerLink]="['/tlc-dental/location']" routerLinkActive="router-link-active">Location</a>
-		<a [routerLink]="['/tlc-dental/contact']" routerLinkActive="router-link-active">Contact</a>
+		<a [routerLink]="['/tlc-dental/services']" routerLinkActive="router-link-active" (click)="setRoute('/tlc-dental/services')">{{ languaje.services}}</a>
+		<a [routerLink]="['/tlc-dental/clinic']" routerLinkActive="router-link-active" (click)="setRoute('/tlc-dental/clinic')">{{ languaje.clinic}}</a>
+		<a [routerLink]="['/tlc-dental/doctors']" routerLinkActive="router-link-active" (click)="setRoute('/tlc-dental/doctors')">{{ languaje.doctors}}</a>
+		<a [routerLink]="['/tlc-dental/location']" routerLinkActive="router-link-active" (click)="setRoute('/tlc-dental/location')">{{ languaje.location}}</a>
+		<a [routerLink]="['/tlc-dental/contact']" routerLinkActive="router-link-active" (click)="setRoute('/tlc-dental/contact')">{{ languaje.contact}} </a>
 	</nav>
 </div>

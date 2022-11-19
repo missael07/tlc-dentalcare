@@ -1,11 +1,9 @@
 <div class="info-container">
-    <h1 class="title animate__animated animate__backInDown">Location</h1>
-    <p class="subtitle animate__animated animate__rotateInDownRight ">Ave. "A" between 3rd &amp; 4th <br>
-Los Algodones B.C.<br>
-México 21970</p>
-    <a [href]="coords" target="_blank" class="directions animate__animated animate__rotateInDownLeft">Get Directions</a>
+    <h1 class="title animate__animated animate__backInDown animate__delay-1s">{{ languaje.location }}</h1>
+    <p class="subtitle animate__animated animate__rotateInDownRight animate__delay-1s">{{ languaje.locationAddress }}</p>
+    <a [href]="coords" target="_blank" class="directions animate__animated animate__rotateInDownLeft animate__delay-1s">{{ languaje.getDirections }}</a>
 </div>
-<a [href]="coords" target="_blank" class="img-heigth animate__animated animate__rotateInDownRight">
+<a [href]="coords" target="_blank" class="img-heigth animate__animated animate__rotateInDownRight animate__delay-1s">
     <img src="../../../assets/map.jpg" alt="">
 </a>
 

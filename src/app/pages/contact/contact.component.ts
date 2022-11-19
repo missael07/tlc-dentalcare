@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Languaje } from '../../helpers/languaje';
 
 @Component({
   selector: 'app-contact',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  languajeStorage: string | null = localStorage.getItem('lan')
+  languaje = new Languaje(this.languajeStorage ?? '');
   constructor() { }
 
   ngOnInit(): void {

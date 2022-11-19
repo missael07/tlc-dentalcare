@@ -43,24 +43,28 @@ a
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	color: black !important;
     text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover
 {
 	text-decoration: underline;
 }
-
-@media (max-width: 767px) {
-   
-.menu-list > a
-{
-	/* position: relative; */
-	display: inline-block;
-	color: #54514F;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 9px;
-	text-transform: uppercase;
-	margin-right: 15px;
-	/* padding: 13px 0; */
+.icon{
+	width: 30px;
+	height: 25px;
 }
+@media (max-width: 767px) {
+	.menu-list > a
+	{
+		/* position: relative; */
+		display: inline-block;
+		color: #54514F;
+		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-right: 5px;
+		font-weight: bold;
+		/* padding: 13px 0; */
+	}
 }

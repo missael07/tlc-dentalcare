@@ -1,5 +1,5 @@
 
-#contacto label
+.headers
 {
 	position: relative;
 	display: block;
@@ -10,8 +10,7 @@
 	text-transform: uppercase;
 }
 
-#contacto span, 
-#contacto > a
+.info
 {
 	position: relative;
 	display: block;
@@ -23,36 +22,16 @@
 	text-transform: uppercase;
 }
 
-#contacto > a:hover
+a:hover
 {
 	text-decoration: underline;
 }
 
-#contacto > div
-{
-	position: relative;
-	display: block;
-	margin-bottom: 45px;
-	text-align: center;
-	cursor: default;
-}
-
-#contacto > div > a
-{
-	position: relative;
-	display: inline-block;
-	width: 55px;
-	height: 55px;
-	margin: 15px 10px 0;
-	text-indent: -9999em;
-	background-repeat: no-repeat;
-	/* background-image: url(../imagenes/iconos-sociales.png); */
-}
 #contacto p
 {
 	position: relative;
 	display: block;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	padding: 0 75px;
 	margin-bottom: 45px;
@@ -65,15 +44,6 @@
 	margin: 0;
 	font-size: 30px;
 	text-align: center;
-}
-#facebook
-{
-	background-position: left top;
-}
-
-#twitter
-{
-	background-position: right top;
 }
 
 .tel {

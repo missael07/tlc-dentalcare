@@ -1,27 +1,35 @@
+import { Languaje } from "./languaje";
+
+
+const languaje = new Languaje(localStorage.getItem('lan')?? '');
 const services = [{
-        type: 'Cirjuries',
+        type: languaje.cirjuries,
         items: [
-            'Extractions',
-            'Periodontal',
-            'Fillings',
-            'Implants',
-            'Bone Grafts','Root Canals','Partials',
+            languaje.Extractions,
+            languaje.Periodontal,
+            languaje.Fillings,
+            languaje.Implants,
+            languaje.Bone_Grafts,
+            languaje.Root_Canals,
+            languaje.Partials,
         ]
     },{
-        type: 'Costmetics',
+        type: languaje.costmetics,
         items: [
-            'Bridges',
-            'Dentures',
-            'Cleanings',
-            'Implants','Crown Lenthening','Crowns','Bleaching',
-            'Cleanings',
+            languaje.Bridges,
+            languaje.Dentures,
+            languaje.Cleanings,
+            languaje.Crown_Lenthening,
+            languaje.Crowns,
+            languaje.Bleaching,
         ]
     },{
-        type: 'Others',
+        type: languaje.others,
         items: [
-            'All On X',
-            'Sinus Lift',
-            'IV Sedation','Guards',
+            languaje.All_On_X,
+            languaje.Sinus_Lift,
+            languaje.Sedation,
+            languaje.Guards,
         ]
     }
 

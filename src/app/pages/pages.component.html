@@ -5,15 +5,13 @@
             <!-- Mi sistema de rutas -->
             <router-outlet></router-outlet>
         </div>
-    <!-- <div class="preloader" *ngIf="loading">
+    <div class="preloader" *ngIf="loading">
         <div class="loader">
-            <div class="loader__figure"></div>
-            <p class="loader__label">Book Directory</p>
+            <img src="../../assets/dark-logo.png" class="loader__figure" alt="TLC Dental" >
         </div>
-    </div> -->
-    <!-- <router-outlet></router-outlet> -->
+    </div>
+    </div>
+    <img src="../../../assets/united-states.png" class="icon float-end lan-button icon" alt="US" (click)="changeLanguaje('EN')" *ngIf="showMx">
+        <img src="../../../assets/mexico.png" class="icon float-end lan-button icon" alt="MX" (click)="changeLanguaje('ES')" *ngIf="!showMx">
 </div>
-<!-- <footer class="footer">
-    © 20xx TLC Dental by Missael's Development
-</footer> -->
 
