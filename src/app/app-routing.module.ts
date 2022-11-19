@@ -11,7 +11,7 @@ import { LocationComponent } from './pages/location/location.component';
 
 const routes: Routes = [
   { 
-    path: 'home', 
+    path: 'tlc-dental', 
     component: PagesComponent,
     children: [
       {
@@ -31,7 +31,7 @@ const routes: Routes = [
       }
     ]
 },
-  { path: '', redirectTo: '/home/services',pathMatch:'full' },
+  { path: '', redirectTo: '/tlc-dental/services',pathMatch:'full' },
   { path: '**', component: NotpagefoundComponent },
 ];
 
