@@ -13,6 +13,7 @@ export class Languaje{
     public generalDenstistry: string = '';
     public Root_Canal_Specialist: string = '';
     public General_Implant_Specialist: string = '';
+    public Specialist: string = '';
     //#endregion Doctors
     //#region Location
     public locationAddress: string = '';
@@ -70,6 +71,7 @@ export class Languaje{
             this.generalDenstistry = 'Odontología general';
             this.Root_Canal_Specialist = 'Especialista en conducto radicular';
             this.General_Implant_Specialist = 'Especialista general e implantes';
+            this.Specialist = 'Especialista en implantes y periodoncia, Certificada en técnica quirúrgica pinhole'
             //#endregion Doctors
             //#region Location
             this.locationAddress = 'Av. A entre tercera y cuarta Los Algodones B.C México';
@@ -119,6 +121,7 @@ export class Languaje{
             this.generalDenstistry = 'General Denstistry';
             this.Root_Canal_Specialist = 'Root Canal Specialist';
             this.General_Implant_Specialist = 'General & Implant Specialist';
+            this.Specialist = 'Implant & Periodontal Specialist Certified pinhole surgical technique'
             //#endregion Doctors
             //#region Location
             this.locationAddress = 'Ave. "A" between 3rd & 4th Los Algodones B.C. México';

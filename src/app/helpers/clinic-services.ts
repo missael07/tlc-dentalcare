@@ -3,7 +3,7 @@ import { Languaje } from "./languaje";
 
 const languaje = new Languaje(localStorage.getItem('lan')?? '');
 const services = [{
-        type: languaje.cirjuries,
+        type: '',
         items: [
             languaje.Extractions,
             languaje.Periodontal,
@@ -14,7 +14,7 @@ const services = [{
             languaje.Partials,
         ]
     },{
-        type: languaje.costmetics,
+        type: '',
         items: [
             languaje.Bridges,
             languaje.Dentures,
@@ -24,7 +24,7 @@ const services = [{
             languaje.Bleaching,
         ]
     },{
-        type: languaje.others,
+        type: '',
         items: [
             languaje.All_On_X,
             languaje.Sinus_Lift,

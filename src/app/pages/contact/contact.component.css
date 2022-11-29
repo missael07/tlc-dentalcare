@@ -52,7 +52,7 @@ a:hover
 
 @media (max-width: 767px) {
     .info-container {
-		width: 100%;
+		width: 80%;
 		min-width: 90%;
 	}
 	#contacto label

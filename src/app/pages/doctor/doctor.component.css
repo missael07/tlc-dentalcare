@@ -28,6 +28,13 @@
 .doctor-description{
 	margin: 5px 5px;
 }
+.cover{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    margin: 5px;
+    height: 95%;
+    width: 100%;
+}
 @media (max-width: 767px) {
     .info-container {
 		width: 100%;
@@ -47,6 +54,14 @@
 	.doctor-img{
 		width: 50%;
 		height: 45%;
+	}
+	.cover{
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+		margin: 5px;
+		height: 100%;
+		width: 95%;
+		display: flex !important;
 	}
 
 }
